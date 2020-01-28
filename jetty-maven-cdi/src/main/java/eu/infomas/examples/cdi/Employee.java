@@ -1,11 +1,14 @@
 package eu.infomas.examples.cdi;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
+import java.io.Serializable;
 
-@RequestScoped
+//@RequestScoped
+@SessionScoped
 @Named(value = "emp")
-public class Employee {
+public class Employee implements Serializable {
 
     int empno;
     String ename;
@@ -17,7 +20,7 @@ public class Employee {
     }
 
     public int getEmpno() {
-        return empno;
+        return empno++;
     }
 
     public void setEmpno(int empno) {
