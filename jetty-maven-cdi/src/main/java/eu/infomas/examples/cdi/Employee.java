@@ -2,11 +2,13 @@ package eu.infomas.examples.cdi;
 
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.context.SessionScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 
 //@RequestScoped
-@SessionScoped
+//@SessionScoped
+@ApplicationScoped
 @Named(value = "emp")
 public class Employee implements Serializable {
 
