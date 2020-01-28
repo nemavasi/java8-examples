@@ -88,6 +88,7 @@ public class DefaultGreeting implements Greeting {
     }
 
     private void debugLookup() {
+        System.out.println("debugLookup: ");
         try {
             Context ctx = new InitialContext();
             //System.out.println("Context Environment: " + ctx.getEnvironment());
