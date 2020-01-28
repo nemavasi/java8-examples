@@ -52,6 +52,10 @@ public class DefaultGreeting implements Greeting {
         System.out.println("Observed event: " + event);
     }
 
+    public void onEvent2(@Observes String event) {
+        System.out.println("Observed event2: " + event);
+    }
+
     /**
      * Any bean or other Java EE component which supports injection can obtain an instance of
      * `BeanManager` via injection.
