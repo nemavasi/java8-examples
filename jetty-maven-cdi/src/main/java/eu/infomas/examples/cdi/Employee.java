@@ -17,7 +17,7 @@ public class Employee implements Serializable {
     double salary;
 
     public Employee() {
-        System.out.println("qqq");
+        System.out.println("Employee constructor");
         this.ename="Shankar";
     }
 
